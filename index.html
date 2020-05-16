@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" shrink-to-fit=no>
+        <title>Serial K*ller</title>
+        <link rel="stylesheet" href="style.css">
+        
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+        crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="header">
+            <span>
+                <h1>Persona non grata</h1>
+            </span>
+        </div>
+
+        <br>
+        <!-- In this part user can add customer and his victim (data) -->
+        <main>
+            <div id="customer">
+                <h4>Customer</h4>
+                <span><input type="text" id="idCustomer" placeholder="Name, Surname"><button id="submitCustomer" type="submit">Add</button></span>
+            </div>
+            <br>
+            <div id="victim">
+                <h4>Victim</h4>
+                <span><input type="text" id="idVictim" placeholder="Name, Surname"><button id="submitVictim" type="submit">Add</button></span>
+            </div>
+            <br>
+            <div id="address">
+                <span>
+                    <h4>Address</h4>
+                    <input type="text" id="street" placeholder="Street, Number">
+                    <input type="text" id="zip" placeholder="Zip Code">
+                    <input type="text" id="city" placeholder="City">
+                    <button id="submitAddress" type="submit">Add</button>
+                </span>
+            </div>
+        </main>
+        <!-- A list with data from user will be created here -->
+        <br>
+        <div class="template hidden">
+            <h3>List of Customers:</h3>
+            <ul id="customerList">&nbsp;</ul>
+        </div>
+
+        <br>
+        <footer>&#169; All rights reserved.</footer>
+
+        
+        <script src="database.js"></script>
+        <script src="submission.js"></script>
+        <script src="AddressForm.js"></script>
+        <script src="./src/model.js"></script>
+        <script src="./src/view.js"></script>
+        <script src="./src/test.js"></script>
+        <script src="app.js"></script>
+    </body>
+</html>

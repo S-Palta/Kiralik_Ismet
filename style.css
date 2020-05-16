@@ -1,0 +1,38 @@
+html, body {
+    background-image: url(https://cdn.britannica.com/73/191073-131-0D844C57/reaper-death.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1, h3, h4, h6 {
+    font-family: Helvetica, Arial, sans-serif;
+    color: #ffebcd;
+}
+
+div {
+    text-align: center;
+    display: flexbox;
+}
+
+ul {
+    color: #ffebcd;
+}
+
+footer {
+    color: #ffebcd;
+
+    position: relative;
+    top: 9vh;
+}
+
+
+.header {
+    /* positioning */
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+div.hidden {
+    display: none;
+}
